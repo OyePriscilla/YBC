@@ -32,6 +32,7 @@ const English: React.FC = () => {
   const [verses, setVerses] = useState<string[]>([]);
   const [selectedChapter, setSelectedChapter] = useState<number | null>(1);
   const [chapterText, setChapterText] = useState<string>("");
+        // @ts-ignore
   const [isChapterSelected, setIsChapterSelected] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);

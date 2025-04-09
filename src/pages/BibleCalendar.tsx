@@ -32,6 +32,7 @@ const BibleCalendar = () => {
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [selectedSection, setSelectedSection] = useState("New Testament");
 
+        // @ts-ignore
   const renderCalendarDays = (month: string) => {
     const daysInMonth = new Date(
       new Date().getFullYear(),
@@ -214,7 +215,7 @@ const BibleCalendar = () => {
             if (selectedSection.includes("II")) {
               readingResults.oldTestament2 = results[i++];
             }
-            
+
             if (selectedSection.includes("New Testament")) {
               readingResults.newTestament = results[i++];
             }

@@ -1,0 +1,1856 @@
+{
+  "yearly_bible_calendar": {
+    "months": {
+      "January": {
+        "01": {
+          "Old Testament I": "Genesis 1:1-2:3",
+          "Old Testament II": "Job 1:1-2:10",
+          "New Testament": "Matthew 1"
+        },
+        "02": {
+          "Old Testament I": "Genesis 2:4-2:25",
+          "Old Testament II": "Job 2:11-3:26",
+          "New Testament": "Matthew 2"
+        },
+        "03": {
+          "Old Testament I": "Genesis 3",
+          "Old Testament II": "Job 4:5",
+          "New Testament": "Matthew 3"
+        },
+        "04": {
+          "Old Testament I": "Genesis 4:1-4:26",
+          "Old Testament II": "Job 6:7",
+          "New Testament": "Matthew 4"
+        },
+        "05": {
+          "Old Testament I": "Genesis 6:1-7:10",
+          "Old Testament II": "Job 8",
+          "New Testament": "Matthew 5:1-20"
+        },
+        "06": {
+          "Old Testament I": "Genesis 7:11-8:19",
+          "Old Testament II": "Job 9:1-10",
+          "New Testament": "Matthew 5:21-48"
+        },
+        "07": {
+          "Old Testament I": "Genesis 8:20-9:29",
+          "Old Testament II": "Job 11:1-12",
+          "New Testament": "Matthew 6:1-18"
+        },
+        "08": {
+          "Old Testament I": "Genesis 10:1-11:26",
+          "Old Testament II": "Job 13:1-14",
+          "New Testament": "Matthew 6:19-7:6"
+        },
+        "09": {
+          "Old Testament I": "Genesis 11:27-12:20",
+          "Old Testament II": "Job 15",
+          "New Testament": "Matthew 7:7-29"
+        },
+        "10": {
+          "Old Testament I": "Genesis 13:1-14:24",
+          "Old Testament II": "Job 16:1-17",
+          "New Testament": "Matthew 8:1-27"
+        },
+        "11": {
+          "Old Testament I": "Genesis 15:1-16:16",
+          "Old Testament II": "Job 18:1-19",
+          "New Testament": "Matthew 8:28-9:17"
+        },
+        "12": {
+          "Old Testament I": "Genesis 17",
+          "Old Testament II": "Job 20",
+          "New Testament": "Matthew 9:18-38"
+        },
+        "13": {
+          "Old Testament I": "Genesis 18",
+          "Old Testament II": "Job 21",
+          "New Testament": "Matthew 10:1-25"
+        },
+        "14": {
+          "Old Testament I": "Genesis 19",
+          "Old Testament II": "Job 22",
+          "New Testament": "Matthew 10:26-11:1"
+        },
+        "15": {
+          "Old Testament I": "Genesis 20:1-21:34",
+          "Old Testament II": "Job 23:1-24:25",
+          "New Testament": "Matthew 11:2-30"
+        },
+        "16": {
+          "Old Testament I": "Genesis 22",
+          "Old Testament II": "Job 25:1-27:23",
+          "New Testament": "Matthew 12:1-21"
+        },
+        "17": {
+          "Old Testament I": "Genesis 23",
+          "Old Testament II": "Job 28",
+          "New Testament": "Matthew 12:22-50"
+        },
+        "18": {
+          "Old Testament I": "Genesis 24",
+          "Old Testament II": "Job 29:1-30:31",
+          "New Testament": "Matthew 13:1-23"
+        },
+        "19": {
+          "Old Testament I": "Genesis 25",
+          "Old Testament II": "Job 31",
+          "New Testament": "Matthew 13:24-43"
+        },
+        "20": {
+          "Old Testament I": "Genesis 26",
+          "Old Testament II": "Job 32:1-33:33",
+          "New Testament": "Matthew 13:44-14:13"
+        },
+        "21": {
+          "Old Testament I": "Genesis 27",
+          "Old Testament II": "Job 34:1-35:16",
+          "New Testament": "Matthew 14:14-36"
+        },
+        "22": {
+          "Old Testament I": "Genesis 28",
+          "Old Testament II": "Job 36:1-37:24",
+          "New Testament": "Matthew 15:1-28"
+        },
+        "23": {
+          "Old Testament I": "Genesis 29",
+          "Old Testament II": "Job 38:1-39:30",
+          "New Testament": "Matthew 15:29-16:12"
+        },
+        "24": {
+          "Old Testament I": "Genesis 30",
+          "Old Testament II": "Job 40:1-41:34",
+          "New Testament": "Matthew 16:13-17:13"
+        },
+        "25": {
+          "Old Testament I": "Genesis 31",
+          "Old Testament II": "Job 42",
+          "New Testament": "Matthew 17:14-18:14"
+        },
+        "26": {
+          "Old Testament I": "Genesis 32:1-33:16",
+          "Old Testament II": "Psalms 1:1-3:8",
+          "New Testament": "Matthew 18:15-35"
+        },
+        "27": {
+          "Old Testament I": "Genesis 33:17-34:31",
+          "Old Testament II": "Psalms 4:1-6:10",
+          "New Testament": "Matthew 19:1-15"
+        },
+        "28": {
+          "Old Testament I": "Genesis 35",
+          "Old Testament II": "Psalms 7:1-8:9",
+          "New Testament": "Matthew 19:16-20:16"
+        },
+        "29": {
+          "Old Testament I": "Genesis 36",
+          "Old Testament II": "Psalms 9:1-10:18",
+          "New Testament": "Matthew 20:17-34"
+        },
+        "30": {
+          "Old Testament I": "Genesis 37",
+          "Old Testament II": "Psalms 11:1-14:7",
+          "New Testament": "Matthew 21:1-32"
+        },
+        "31": {
+          "Old Testament I": "Genesis 38",
+          "Old Testament II": "Psalms 15:1-16:11",
+          "New Testament": "Matthew 21:33-22:14"
+        }
+      },
+      "February": {
+        "1": {
+          "Old Testament I": "Genesis 39",
+          "Old Testament II": "Psalm 17",
+          "New Testament": "Matthew 22:15-46"
+        },
+        "2": {
+          "Old Testament I": "Genesis 40",
+          "Old Testament II": "Psalm 18:1-29",
+          "New Testament": "Matthew 23"
+        },
+        "3": {
+          "Old Testament I": "Genesis 41:1-49",
+          "Old Testament II": "Psalm 18:30-50",
+          "New Testament": "Matthew 24:1-28"
+        },
+        "4": {
+          "Old Testament I": "Genesis 41:50-42:38",
+          "Old Testament II": "Psalm 19",
+          "New Testament": "Matthew 24:29-51"
+        },
+        "5": {
+          "Old Testament I": "Genesis 43",
+          "Old Testament II": "Psalm 20-21",
+          "New Testament": "Matthew 25:1-30"
+        },
+        "6": {
+          "Old Testament I": "Genesis 44",
+          "Old Testament II": "Psalm 22",
+          "New Testament": "Matthew 25:31-26:2"
+        },
+        "7": {
+          "Old Testament I": "Genesis 45",
+          "Old Testament II": "Psalm 23-24",
+          "New Testament": "Matthew 26:3-30"
+        },
+        "8": {
+          "Old Testament I": "Genesis 46:1-47:26",
+          "Old Testament II": "Psalm 25",
+          "New Testament": "Matthew 26:31-57"
+        },
+        "9": {
+          "Old Testament I": "Genesis 47:27-48:22",
+          "Old Testament II": "Psalm 26-27",
+          "New Testament": "Matthew 26:58-75"
+        },
+        "10": {
+          "Old Testament I": "Genesis 49",
+          "Old Testament II": "Psalm 28-29",
+          "New Testament": "Matthew 27:1-26"
+        },
+        "11": {
+          "Old Testament I": "Genesis 50",
+          "Old Testament II": "Psalm 30",
+          "New Testament": "Matthew 27:27-44"
+        },
+        "12": {
+          "Old Testament I": "Exodus 1:1-2:22",
+          "Old Testament II": "Psalm 31",
+          "New Testament": "Matthew 27:45-66"
+        },
+        "13": {
+          "Old Testament I": "Exodus 2:23-3:22",
+          "Old Testament II": "Psalm 32-33",
+          "New Testament": "Matthew 28"
+        },
+        "14": {
+          "Old Testament I": "Exodus 4",
+          "Old Testament II": "Psalm 34",
+          "New Testament": "Acts 1"
+        },
+        "15": {
+          "Old Testament I": "Exodus 5:1-6:12",
+          "Old Testament II": "Psalm 35-36",
+          "New Testament": "Acts 2:1-21"
+        },
+        "16": {
+          "Old Testament I": "Exodus 6:13-7:25",
+          "Old Testament II": "Psalm 37",
+          "New Testament": "Acts 2:22-47"
+        },
+        "17": {
+          "Old Testament I": "Exodus 8",
+          "Old Testament II": "Psalm 38-39",
+          "New Testament": "Acts 3"
+        },
+        "18": {
+          "Old Testament I": "Exodus 9",
+          "Old Testament II": "Psalm 40-41",
+          "New Testament": "Acts 4:1-31"
+        },
+        "19": {
+          "Old Testament I": "Exodus 10",
+          "Old Testament II": "Psalm 42-43",
+          "New Testament": "Acts 4:32-5:11"
+        },
+        "20": {
+          "Old Testament I": "Exodus 11:1-12:20",
+          "Old Testament II": "Psalm 44",
+          "New Testament": "Acts 5:12-42"
+        },
+        "21": {
+          "Old Testament I": "Exodus 12:21-51",
+          "Old Testament II": "Psalm 45-46",
+          "New Testament": "Acts 6"
+        },
+        "22": {
+          "Old Testament I": "Exodus 13:1-14:4",
+          "Old Testament II": "Psalm 47-48",
+          "New Testament": "Acts 7:1-29"
+        },
+        "23": {
+          "Old Testament I": "Exodus 14:5-31",
+          "Old Testament II": "Psalm 49-50",
+          "New Testament": "Acts 7:30-8:4"
+        },
+        "24": {
+          "Old Testament I": "Exodus 15",
+          "Old Testament II": "Psalm 51",
+          "New Testament": "Acts 8:5-40"
+        },
+        "25": {
+          "Old Testament I": "Exodus 16",
+          "Old Testament II": "Psalm 52-54",
+          "New Testament": "Acts 9:1-31"
+        },
+        "26": {
+          "Old Testament I": "Exodus 17",
+          "Old Testament II": "Psalm 55",
+          "New Testament": "Acts 9:32-43"
+        },
+        "27": {
+          "Old Testament I": "Exodus 18",
+          "Old Testament II": "Psalm 56-57",
+          "New Testament": "Acts 10:1-23"
+        },
+        "28": {
+          "Old Testament I": "Exodus 19",
+          "Old Testament II": "Psalm 58-59",
+          "New Testament": "Acts 10:24-48"
+        }
+      },
+
+      "March": {
+        "1": {
+          "Old Testament I": "Exodus 20",
+          "Old Testament II": "Psalm 60-61",
+          "New Testament": "Acts 11:1-18"
+        },
+        "2": {
+          "Old Testament I": "Exodus 21",
+          "Old Testament II": "Psalm 62-63",
+          "New Testament": "Acts 11:19-30"
+        },
+        "3": {
+          "Old Testament I": "Exodus 22:1-23:9",
+          "Old Testament II": "Psalm 64-65",
+          "New Testament": "Acts 12"
+        },
+        "4": {
+          "Old Testament I": "Exodus 23:10-33",
+          "Old Testament II": "Psalm 66-67",
+          "New Testament": "Acts 13:1-25"
+        },
+        "5": {
+          "Old Testament I": "Exodus 24",
+          "Old Testament II": "Psalm 68",
+          "New Testament": "Acts 13:26-52"
+        },
+        "6": {
+          "Old Testament I": "Exodus 25",
+          "Old Testament II": "Psalm 69",
+          "New Testament": "Acts 14"
+        },
+        "7": {
+          "Old Testament I": "Exodus 26:1-30",
+          "Old Testament II": "Psalm 70-71",
+          "New Testament": "Acts 15:1-21"
+        },
+        "8": {
+          "Old Testament I": "Exodus 26:31-27:19",
+          "Old Testament II": "Psalm 72",
+          "New Testament": "Acts 15:22-35"
+        },
+        "9": {
+          "Old Testament I": "Exodus 27:20-28:14",
+          "Old Testament II": "Psalm 73",
+          "New Testament": "Acts 15:36-16:15"
+        },
+        "10": {
+          "Old Testament I": "Exodus 28:15-43",
+          "Old Testament II": "Psalm 74-75",
+          "New Testament": "Acts 16:16-40"
+        },
+        "11": {
+          "Old Testament I": "Exodus 29:1-37",
+          "Old Testament II": "Psalm 76-77",
+          "New Testament": "Acts 17:1-15"
+        },
+        "12": {
+          "Old Testament I": "Exodus 29:38-30:10",
+          "Old Testament II": "Psalm 78:1-31",
+          "New Testament": "Acts 17:16-34"
+        },
+        "13": {
+          "Old Testament I": "Exodus 30:11-38",
+          "Old Testament II": "Psalm 78:32-72",
+          "New Testament": "Acts 18:1-22"
+        },
+        "14": {
+          "Old Testament I": "Exodus 31",
+          "Old Testament II": "Psalm 79-80",
+          "New Testament": "Acts 18:23-19:20"
+        },
+        "15": {
+          "Old Testament I": "Exodus 32",
+          "Old Testament II": "Psalm 81-82",
+          "New Testament": "Acts 19:21-41"
+        },
+        "16": {
+          "Old Testament I": "Exodus 33:1-34:3",
+          "Old Testament II": "Psalm 83-84",
+          "New Testament": "Acts 20:1-16"
+        },
+        "17": {
+          "Old Testament I": "Exodus 34:4-35",
+          "Old Testament II": "Psalm 85-86",
+          "New Testament": "Acts 20:17-40"
+        },
+        "18": {
+          "Old Testament I": "Exodus 35",
+          "Old Testament II": "Psalm 87-88",
+          "New Testament": "Acts 21:1-16"
+        },
+        "19": {
+          "Old Testament I": "Exodus 36",
+          "Old Testament II": "Psalm 89:1-18",
+          "New Testament": "Acts 21:17-38"
+        },
+        "20": {
+          "Old Testament I": "Exodus 37",
+          "Old Testament II": "Psalm 89:19-52",
+          "New Testament": "Acts 22:1-21"
+        },
+        "21": {
+          "Old Testament I": "Exodus 38",
+          "Old Testament II": "Psalm 90-91",
+          "New Testament": "Acts 22:22-23:11"
+        },
+        "22": {
+          "Old Testament I": "Exodus 39",
+          "Old Testament II": "Psalm 92-93",
+          "New Testament": "Acts 23:12-35"
+        },
+        "23": {
+          "Old Testament I": "Exodus 40",
+          "Old Testament II": "Psalm 94-95",
+          "New Testament": "Acts 24"
+        },
+        "24": {
+          "Old Testament I": "Leviticus 1",
+          "Old Testament II": "Psalm 96-98",
+          "New Testament": "Acts 25:1-22"
+        },
+        "25": {
+          "Old Testament I": "Leviticus 2",
+          "Old Testament II": "Psalm 99-101",
+          "New Testament": "Acts 25:23-26:11"
+        },
+        "26": {
+          "Old Testament I": "Leviticus 3",
+          "Old Testament II": "Psalm 102",
+          "New Testament": "Acts 26:12-32"
+        },
+        "27": {
+          "Old Testament I": "Leviticus 4:1-26",
+          "Old Testament II": "Psalm 103",
+          "New Testament": "Acts 27:1-26"
+        },
+        "28": {
+          "Old Testament I": "Leviticus 4:27-5:13",
+          "Old Testament II": "Psalm 104",
+          "New Testament": "Acts 27:27-28:10"
+        },
+        "29": {
+          "Old Testament I": "Leviticus 5:14-6:7",
+          "Old Testament II": "Psalm 105",
+          "New Testament": "Acts 28:11-31"
+        },
+        "30": {
+          "Old Testament I": "Leviticus 6:8-7:10",
+          "Old Testament II": "Psalm 106",
+          "New Testament": "Mark 1:1-20"
+        },
+        "31": {
+          "Old Testament I": "Leviticus 7:11-38",
+          "Old Testament II": "Psalm 107",
+          "New Testament": "Mark 1:21-45"
+        }
+      },
+      "April": {
+        "1": {
+          "Old Testament I": "Lev 8",
+          "Old Testament II": "Psalm 108",
+          "New Testament": "Mark 2:1-22"
+        },
+        "2": {
+          "Old Testament I": "Lev 9",
+          "Old Testament II": "Psalm 109",
+          "New Testament": "Mark 2:23-3:12"
+        },
+        "3": {
+          "Old Testament I": "Lev 10",
+          "Old Testament II": "Psalm 110, 111",
+          "New Testament": "Mark 3:13-35"
+        },
+        "4": {
+          "Old Testament I": "Lev 11",
+          "Old Testament II": "Psalm 112, 113, 114",
+          "New Testament": "Mark 4:1-20"
+        },
+        "5": {
+          "Old Testament I": "Lev 12:1-13:23",
+          "Old Testament II": "Psalm 115, 116",
+          "New Testament": "Mark 4:21-41"
+        },
+        "6": {
+          "Old Testament I": "Lev 13:24-59",
+          "Old Testament II": "Psalm 117, 118",
+          "New Testament": "Mark 5:1-20"
+        },
+        "7": {
+          "Old Testament I": "Lev 14:1-32",
+          "Old Testament II": "Psalm 119:1-40",
+          "New Testament": "Mark 5:21-43"
+        },
+        "8": {
+          "Old Testament I": "Lev 14:33-57",
+          "Old Testament II": "Psalm 119:41-72",
+          "New Testament": "Mark 6:1-29"
+        },
+        "9": {
+          "Old Testament I": "Lev 15",
+          "Old Testament II": "Psalm 119:73-112",
+          "New Testament": "Mark 6:30-56"
+        },
+        "10": {
+          "Old Testament I": "Lev 16",
+          "Old Testament II": "Psalm 119:113-144",
+          "New Testament": "Mark 7:1-23"
+        },
+        "11": {
+          "Old Testament I": "Lev 17, 18",
+          "Old Testament II": "Psalm 119:145-176",
+          "New Testament": "Mark 7:24-8:10"
+        },
+        "12": {
+          "Old Testament I": "Lev 19, 20",
+          "Old Testament II": "Psalm 120-123",
+          "New Testament": "Mark 8:11-26"
+        },
+        "13": {
+          "Old Testament I": "Lev 21",
+          "Old Testament II": "Psalm 124-127",
+          "New Testament": "Mark 8:27-9:13"
+        },
+        "14": {
+          "Old Testament I": "Lev 22",
+          "Old Testament II": "Psalm 128-131",
+          "New Testament": "Mark 9:14-32"
+        },
+        "15": {
+          "Old Testament I": "Lev 23:1-22",
+          "Old Testament II": "Psalm 132, 133",
+          "New Testament": "Mark 9:33-50"
+        },
+        "16": {
+          "Old Testament I": "Lev 23:23-44",
+          "Old Testament II": "Psalm 134, 135",
+          "New Testament": "Mark 10:1-31"
+        },
+        "17": {
+          "Old Testament I": "Lev 24",
+          "Old Testament II": "Psalm 136, 137",
+          "New Testament": "Mark 10:32-52"
+        },
+        "18": {
+          "Old Testament I": "Lev 25",
+          "Old Testament II": "Psalm 138, 139",
+          "New Testament": "Mark 11:1-26"
+        },
+        "19": {
+          "Old Testament I": "Lev 26",
+          "Old Testament II": "Psalm 140, 141",
+          "New Testament": "Mark 11:27-12:17"
+        },
+        "20": {
+          "Old Testament I": "Lev 27",
+          "Old Testament II": "Psalm 142, 143",
+          "New Testament": "Mark 12:18-44"
+        },
+        "21": {
+          "Old Testament I": "Num 1",
+          "Old Testament II": "Psalm 144, 145",
+          "New Testament": "Mark 13"
+        },
+        "22": {
+          "Old Testament I": "Num 2",
+          "Old Testament II": "Psalm 146, 147",
+          "New Testament": "Mark 14:1-26"
+        },
+        "23": {
+          "Old Testament I": "Num 3",
+          "Old Testament II": "Psalm 148-150",
+          "New Testament": "Mark 14:27-52"
+        },
+        "24": {
+          "Old Testament I": "Num 4",
+          "Old Testament II": "Prov 1",
+          "New Testament": "Mark 14:53-72"
+        },
+        "25": {
+          "Old Testament I": "Num 5",
+          "Old Testament II": "Prov 2",
+          "New Testament": "Mark 15:1-23"
+        },
+        "26": {
+          "Old Testament I": "Num 6",
+          "Old Testament II": "Prov 3",
+          "New Testament": "Mark 15:24-47"
+        },
+        "27": {
+          "Old Testament I": "Num 7",
+          "Old Testament II": "Prov 4",
+          "New Testament": "Mark 16"
+        },
+        "28": {
+          "Old Testament I": "Num 8",
+          "Old Testament II": "Prov 5:1-6:19",
+          "New Testament": "1 Peter 1:1-12"
+        },
+        "29": {
+          "Old Testament I": "Num 9:1-10:10",
+          "Old Testament II": "Prov 6:20-7:27",
+          "New Testament": "1 Peter 1:13-2:10"
+        },
+        "30": {
+          "Old Testament I": "Num 10:11-11:3",
+          "Old Testament II": "Prov 8",
+          "New Testament": "1 Peter 2:11-3:7"
+        }
+      },
+      "May": {
+        "1": {
+          "Old Testament I": "Num 11:4-35",
+          "Old Testament II": "Prov 9",
+          "New Testament": "1 Peter 3:8-22"
+        },
+        "2": {
+          "Old Testament I": "Num 12, 13",
+          "Old Testament II": "Prov 10",
+          "New Testament": "1 Peter 4"
+        },
+        "3": {
+          "Old Testament I": "Num 14",
+          "Old Testament II": "Prov 11",
+          "New Testament": "1 Peter 5"
+        },
+        "4": {
+          "Old Testament I": "Num 15",
+          "Old Testament II": "Prov 12",
+          "New Testament": "2 Peter 1"
+        },
+        "5": {
+          "Old Testament I": "Num 16:1-40",
+          "Old Testament II": "Prov 13",
+          "New Testament": "2 Peter 2"
+        },
+        "6": {
+          "Old Testament I": "Num 16:41-17:13",
+          "Old Testament II": "Prov 14",
+          "New Testament": "2 Peter 3"
+        },
+        "7": {
+          "Old Testament I": "Num 18",
+          "Old Testament II": "Prov 15",
+          "New Testament": "James 1"
+        },
+        "8": {
+          "Old Testament I": "Num 19",
+          "Old Testament II": "Prov 16",
+          "New Testament": "James 2"
+        },
+        "9": {
+          "Old Testament I": "Num 20",
+          "Old Testament II": "Prov 17",
+          "New Testament": "James 3"
+        },
+        "10": {
+          "Old Testament I": "Num 21",
+          "Old Testament II": "Prov 18",
+          "New Testament": "James 4"
+        },
+        "11": {
+          "Old Testament I": "Num 22:1-38",
+          "Old Testament II": "Prov 19",
+          "New Testament": "James 5"
+        },
+        "12": {
+          "Old Testament I": "Num 22:39-23:26",
+          "Old Testament II": "Prov 20:1-21:11",
+          "New Testament": "Jude 1"
+        },
+        "13": {
+          "Old Testament I": "Num 23:27-24:25",
+          "Old Testament II": "Prov 21:12-22:16",
+          "New Testament": "Luke 1:1-25"
+        },
+        "14": {
+          "Old Testament I": "Num 25:1-26:51",
+          "Old Testament II": "Prov 22:17-23:11",
+          "New Testament": "Luke 1:26-56"
+        },
+        "15": {
+          "Old Testament I": "Num 26:52-27:23",
+          "Old Testament II": "Prov 23:12-35",
+          "New Testament": "Luke 1:57-80"
+        },
+        "16": {
+          "Old Testament I": "Num 28",
+          "Old Testament II": "Prov 24",
+          "New Testament": "Luke 2:1-21"
+        },
+        "17": {
+          "Old Testament I": "Num 29",
+          "Old Testament II": "Prov 25:1-26:12",
+          "New Testament": "Luke 2:22-52"
+        },
+        "18": {
+          "Old Testament I": "Num 30, 31",
+          "Old Testament II": "Prov 26:13-27:27",
+          "New Testament": "Luke 3"
+        },
+        "19": {
+          "Old Testament I": "Num 32",
+          "Old Testament II": "Prov 28",
+          "New Testament": "Luke 4:1-15"
+        },
+        "20": {
+          "Old Testament I": "Num 33",
+          "Old Testament II": "Prov 29",
+          "New Testament": "Luke 4:16-44"
+        },
+        "21": {
+          "Old Testament I": "Num 34:1-35:8",
+          "Old Testament II": "Prov 30",
+          "New Testament": "Luke 5:1-16"
+        },
+        "22": {
+          "Old Testament I": "Num 35:9-36:13",
+          "Old Testament II": "Prov 31",
+          "New Testament": "Luke 5:17-39"
+        },
+        "23": {
+          "Old Testament I": "Deut 1",
+          "Old Testament II": "Eccl 1:1-2:10",
+          "New Testament": "Luke 6:1-19"
+        },
+        "24": {
+          "Old Testament I": "Deut 2",
+          "Old Testament II": "Eccl 2:11-3:15",
+          "New Testament": "Luke 6:20-49"
+        },
+        "25": {
+          "Old Testament I": "Deut 3",
+          "Old Testament II": "Eccl 3:16-4:16",
+          "New Testament": "Luke 7:1-29"
+        },
+        "26": {
+          "Old Testament I": "Deut 4",
+          "Old Testament II": "Eccl 5, 6",
+          "New Testament": "Luke 7:30-50"
+        },
+        "27": {
+          "Old Testament I": "Deut 5",
+          "Old Testament II": "Eccl 7",
+          "New Testament": "Luke 8:1-21"
+        },
+        "28": {
+          "Old Testament I": "Deut 6:1-7:10",
+          "Old Testament II": "Eccl 8:1-9:10",
+          "New Testament": "Luke 8:22-39"
+        },
+        "29": {
+          "Old Testament I": "Deut 7:11-8:20",
+          "Old Testament II": "Eccl 9:11-10:20",
+          "New Testament": "Luke 8:40-56"
+        },
+        "30": {
+          "Old Testament I": "Deut 9:1-10:11",
+          "Old Testament II": "Eccl 11, 12",
+          "New Testament": "Luke 9:1-17"
+        },
+        "31": {
+          "Old Testament I": "Deut 10:12-11:32",
+          "Old Testament II": "Song 1:1-2:7",
+          "New Testament": "Luke 9:18-36"
+        }
+      },
+      "June": {
+        "1": {
+          "Old Testament I": "Deut 12",
+          "Old Testament II": "Song 2:8-3:5",
+          "New Testament": "Luke 9:37-62"
+        },
+        "2": {
+          "Old Testament I": "Deut 13:1-14:21",
+          "Old Testament II": "Song 3:6-5:1",
+          "New Testament": "Luke 10:1-24"
+        },
+        "3": {
+          "Old Testament I": "Deut 14:22-15:23",
+          "Old Testament II": "Song 5:2-6:9",
+          "New Testament": "Luke 10:25-42"
+        },
+        "4": {
+          "Old Testament I": "Deut 16",
+          "Old Testament II": "Song 6:10-8:14",
+          "New Testament": "Luke 11:1-13"
+        },
+        "5": {
+          "Old Testament I": "Deut 17:1-18:8",
+          "Old Testament II": "Obadiah",
+          "New Testament": "Luke 11:14-36"
+        },
+        "6": {
+          "Old Testament I": "Deut 18:9-19:21",
+          "Old Testament II": "Joel 1",
+          "New Testament": "Luke 11:37-54"
+        },
+        "7": {
+          "Old Testament I": "Deut 20, 21",
+          "Old Testament II": "Joel 2",
+          "New Testament": "Luke 12:1-21"
+        },
+        "8": {
+          "Old Testament I": "Deut 22:1-23:8",
+          "Old Testament II": "Joel 3",
+          "New Testament": "Luke 12:22-40"
+        },
+        "9": {
+          "Old Testament I": "Deut 23:9-24:22",
+          "Old Testament II": "Jonah 1, 2",
+          "New Testament": "Luke 12:41-59"
+        },
+        "10": {
+          "Old Testament I": "Deut 25:1-26:15",
+          "Old Testament II": "Jonah 3, 4",
+          "New Testament": "Luke 13:1-21"
+        },
+        "11": {
+          "Old Testament I": "Deut 26:16-27:26",
+          "Old Testament II": "Amos 1, 2",
+          "New Testament": "Luke 13:22-35"
+        },
+        "12": {
+          "Old Testament I": "Deut 28:1-37",
+          "Old Testament II": "Amos 3, 4",
+          "New Testament": "Luke 14:1-24"
+        },
+        "13": {
+          "Old Testament I": "Deut 28:38-68",
+          "Old Testament II": "Amos 5, 6",
+          "New Testament": "Luke 14:25-15:10"
+        },
+        "14": {
+          "Old Testament I": "Deut 29",
+          "Old Testament II": "Amos 7, 8",
+          "New Testament": "Luke 15:11-32"
+        },
+        "15": {
+          "Old Testament I": "Deut 30:1-31:13",
+          "Old Testament II": "Amos 9",
+          "New Testament": "Luke 16"
+        },
+        "16": {
+          "Old Testament I": "Deut 31:14-32:14",
+          "Old Testament II": "Hosea 1:1-2:1",
+          "New Testament": "Luke 17:1-19"
+        },
+        "17": {
+          "Old Testament I": "Deut 32:15-52",
+          "Old Testament II": "Hosea 2:2-3:5",
+          "New Testament": "Luke 17:20-18:14"
+        },
+        "18": {
+          "Old Testament I": "Deut 33",
+          "Old Testament II": "Hosea 4:1-6:3",
+          "New Testament": "Luke 18:15-43"
+        },
+        "19": {
+          "Old Testament I": "Deut 34",
+          "Old Testament II": "Hosea 6:4-7:16",
+          "New Testament": "Luke 19:1-28"
+        },
+        "20": {
+          "Old Testament I": "Joshua 1",
+          "Old Testament II": "Hosea 8, 9",
+          "New Testament": "Luke 19:29-48"
+        },
+        "21": {
+          "Old Testament I": "Joshua 2",
+          "Old Testament II": "Hosea 10:1-11:11",
+          "New Testament": "Luke 20:1-19"
+        },
+        "22": {
+          "Old Testament I": "Joshua 3",
+          "Old Testament II": "Hosea 11:12-14:9",
+          "New Testament": "Luke 20:20-21:4"
+        },
+        "23": {
+          "Old Testament I": "Joshua 4:1-5:12",
+          "Old Testament II": "Isaiah 1",
+          "New Testament": "Luke 21:5-38"
+        },
+        "24": {
+          "Old Testament I": "Joshua 5:13-6:27",
+          "Old Testament II": "Isaiah 2",
+          "New Testament": "Luke 22:1-30"
+        },
+        "25": {
+          "Old Testament I": "Joshua 7",
+          "Old Testament II": "Isaiah 3, 4",
+          "New Testament": "Luke 22:31-53"
+        },
+        "26": {
+          "Old Testament I": "Joshua 8",
+          "Old Testament II": "Isaiah 5",
+          "New Testament": "Luke 22:54-23:12"
+        },
+        "27": {
+          "Old Testament I": "Joshua 9",
+          "Old Testament II": "Isaiah 6",
+          "New Testament": "Luke 23:13-46"
+        },
+        "28": {
+          "Old Testament I": "Joshua 10",
+          "Old Testament II": "Isaiah 7:1-8:4",
+          "New Testament": "Luke 23:47-24:12"
+        },
+        "29": {
+          "Old Testament I": "Joshua 11, 12",
+          "Old Testament II": "Isaiah 8:5-9:7",
+          "New Testament": "Luke 24:13-53"
+        },
+        "30": {
+          "Old Testament I": "Joshua 13",
+          "Old Testament II": "Isaiah 9:8-10:5",
+          "New Testament": "1 Thess 1"
+        }
+      },
+      "July": {
+        "1": {
+          "Old Testament I": "Joshua 14, 15",
+          "Old Testament II": "Isaiah 10:6-34",
+          "New Testament": "1 Thess 2:1-16"
+        },
+        "2": {
+          "Old Testament I": "Joshua 16, 17",
+          "Old Testament II": "Isaiah 11, 12",
+          "New Testament": "1 Thess 2:17-3:13"
+        },
+        "3": {
+          "Old Testament I": "Joshua 18, 19",
+          "Old Testament II": "Isaiah 13",
+          "New Testament": "1 Thess 4"
+        },
+        "4": {
+          "Old Testament I": "Joshua 20, 21",
+          "Old Testament II": "Isaiah 14",
+          "New Testament": "1 Thess 5"
+        },
+        "5": {
+          "Old Testament I": "Joshua 22",
+          "Old Testament II": "Isaiah 15, 16",
+          "New Testament": "2 Thess 1"
+        },
+        "6": {
+          "Old Testament I": "Joshua 23",
+          "Old Testament II": "Isaiah 17, 18",
+          "New Testament": "2 Thess 2"
+        },
+        "7": {
+          "Old Testament I": "Joshua 24",
+          "Old Testament II": "Isaiah 19, 20",
+          "New Testament": "2 Thess 3"
+        },
+        "8": {
+          "Old Testament I": "Judges 1:1-2:5",
+          "Old Testament II": "Isaiah 21:1-22:14",
+          "New Testament": "1 Cor 1"
+        },
+        "9": {
+          "Old Testament I": "Judges 2:6-3:4",
+          "Old Testament II": "Isaiah 22:15-23:18",
+          "New Testament": "1 Cor 2"
+        },
+        "10": {
+          "Old Testament I": "Judges 3:5-31",
+          "Old Testament II": "Isaiah 24",
+          "New Testament": "1 Cor 3"
+        },
+        "11": {
+          "Old Testament I": "Judges 4",
+          "Old Testament II": "Isaiah 25",
+          "New Testament": "1 Cor 4"
+        },
+        "12": {
+          "Old Testament I": "Judges 5",
+          "Old Testament II": "Isaiah 26",
+          "New Testament": "1 Cor 5"
+        },
+        "13": {
+          "Old Testament I": "Judges 6",
+          "Old Testament II": "Isaiah 27",
+          "New Testament": "1 Cor 6"
+        },
+        "14": {
+          "Old Testament I": "Judges 7",
+          "Old Testament II": "Isaiah 28",
+          "New Testament": "1 Cor 7"
+        },
+        "15": {
+          "Old Testament I": "Judges 8",
+          "Old Testament II": "Isaiah 29",
+          "New Testament": "1 Cor 8"
+        },
+        "16": {
+          "Old Testament I": "Judges 9:1-10:5",
+          "Old Testament II": "Isaiah 30",
+          "New Testament": "1 Cor 9:1-23"
+        },
+        "17": {
+          "Old Testament I": "Judges 10:6-11:28",
+          "Old Testament II": "Isaiah 31, 32",
+          "New Testament": "1 Cor 9:24-10:14"
+        },
+        "18": {
+          "Old Testament I": "Judges 11:29-12:15",
+          "Old Testament II": "Isaiah 33",
+          "New Testament": "1 Cor 10:15-11:1"
+        },
+        "19": {
+          "Old Testament I": "Judges 13",
+          "Old Testament II": "Isaiah 34, 35",
+          "New Testament": "1 Cor 11:2-34"
+        },
+        "20": {
+          "Old Testament I": "Judges 14, 15",
+          "Old Testament II": "Isaiah 36:1-37:7",
+          "New Testament": "1 Cor 12"
+        },
+        "21": {
+          "Old Testament I": "Judges 16",
+          "Old Testament II": "Isaiah 37:8-38",
+          "New Testament": "1 Cor 13"
+        },
+        "22": {
+          "Old Testament I": "Judges 17, 18",
+          "Old Testament II": "Isaiah 38, 39",
+          "New Testament": "1 Cor 14"
+        },
+        "23": {
+          "Old Testament I": "Judges 19",
+          "Old Testament II": "Isaiah 40",
+          "New Testament": "1 Cor 15:1-34"
+        },
+        "24": {
+          "Old Testament I": "Judges 20",
+          "Old Testament II": "Isaiah 41:1-20",
+          "New Testament": "1 Cor 15:35-58"
+        },
+        "25": {
+          "Old Testament I": "Judges 21",
+          "Old Testament II": "Isaiah 41:21-42:21",
+          "New Testament": "1 Cor 16"
+        },
+        "26": {
+          "Old Testament I": "Ruth 1",
+          "Old Testament II": "Isaiah 42:22-43:10",
+          "New Testament": "2 Cor 1"
+        },
+        "27": {
+          "Old Testament I": "Ruth 2",
+          "Old Testament II": "Isaiah 43:11-44:5",
+          "New Testament": "2 Cor 2"
+        },
+        "28": {
+          "Old Testament I": "Ruth 3, 4",
+          "Old Testament II": "Isaiah 44:6-23",
+          "New Testament": "2 Cor 3:1-4:6"
+        },
+        "29": {
+          "Old Testament I": "1 Sam 1",
+          "Old Testament II": "Isaiah 44:24-45:8",
+          "New Testament": "2 Cor 4:7-5:10"
+        },
+        "30": {
+          "Old Testament I": "1 Sam 2",
+          "Old Testament II": "Isaiah 45:9-25",
+          "New Testament": "2 Cor 5:11-6:10"
+        },
+        "31": {
+          "Old Testament I": "1 Sam 3",
+          "Old Testament II": "Isaiah 46",
+          "New Testament": "2 Cor 6:11-7:16"
+        }
+      },
+      "August": {
+        "1": {
+          "Old Testament I": "1 Sam 4, 5",
+          "Old Testament II": "Isaiah 47",
+          "New Testament": "2 Cor 8"
+        },
+        "2": {
+          "Old Testament I": "1 Sam 6, 7",
+          "Old Testament II": "Isaiah 48",
+          "New Testament": "2 Cor 9"
+        },
+        "3": {
+          "Old Testament I": "1 Sam 8:1-9:14",
+          "Old Testament II": "Isaiah 49",
+          "New Testament": "2 Cor 10"
+        },
+        "4": {
+          "Old Testament I": "1 Sam 9:15-10:27",
+          "Old Testament II": "Isaiah 50:1-51:8",
+          "New Testament": "2 Cor 11"
+        },
+        "5": {
+          "Old Testament I": "1 Sam 11, 12",
+          "Old Testament II": "Isaiah 51:9-23",
+          "New Testament": "2 Cor 12:1-13"
+        },
+        "6": {
+          "Old Testament I": "1 Sam 13",
+          "Old Testament II": "Isaiah 52:1-12",
+          "New Testament": "2 Cor 12:14-13:14"
+        },
+        "7": {
+          "Old Testament I": "1 Sam 14",
+          "Old Testament II": "Isaiah 52:13-53:12",
+          "New Testament": "Rom 1:1-16"
+        },
+        "8": {
+          "Old Testament I": "1 Sam 15",
+          "Old Testament II": "Isaiah 54",
+          "New Testament": "Rom 1:17-32"
+        },
+        "9": {
+          "Old Testament I": "1 Sam 16",
+          "Old Testament II": "Isaiah 55:1-56:8",
+          "New Testament": "Rom 2"
+        },
+        "10": {
+          "Old Testament I": "1 Sam 17:1-31",
+          "Old Testament II": "Isaiah 56:9-57:21",
+          "New Testament": "Rom 3"
+        },
+        "11": {
+          "Old Testament I": "1 Sam 17:32-58",
+          "Old Testament II": "Isaiah 58",
+          "New Testament": "Rom 4:1-22"
+        },
+        "12": {
+          "Old Testament I": "1 Sam 18:1-19:7",
+          "Old Testament II": "Isaiah 59",
+          "New Testament": "Rom 4:23-5:11"
+        },
+        "13": {
+          "Old Testament I": "1 Sam 19:8-20:42",
+          "Old Testament II": "Isaiah 60",
+          "New Testament": "Rom 5:12-21"
+        },
+        "14": {
+          "Old Testament I": "1 Sam 21, 22",
+          "Old Testament II": "Isaiah 61",
+          "New Testament": "Rom 6:1-14"
+        },
+        "15": {
+          "Old Testament I": "1 Sam 23, 24",
+          "Old Testament II": "Isaiah 62:1-63:14",
+          "New Testament": "Rom 6:15-7:6"
+        },
+        "16": {
+          "Old Testament I": "1 Sam 25",
+          "Old Testament II": "Isaiah 63:15-64:12",
+          "New Testament": "Rom 7:7-25"
+        },
+        "17": {
+          "Old Testament I": "1 Sam 26, 27",
+          "Old Testament II": "Isaiah 65",
+          "New Testament": "Rom 8:1-17"
+        },
+        "18": {
+          "Old Testament I": "1 Sam 28, 29",
+          "Old Testament II": "Isaiah 66",
+          "New Testament": "Rom 8:18-39"
+        },
+        "19": {
+          "Old Testament I": "1 Sam 30, 31",
+          "Old Testament II": "Micah 1, 2",
+          "New Testament": "Rom 9:1-29"
+        },
+        "20": {
+          "Old Testament I": "2 Sam 1",
+          "Old Testament II": "Micah 3:1-4:8",
+          "New Testament": "Rom 9:30-10:21"
+        },
+        "21": {
+          "Old Testament I": "2 Sam 2",
+          "Old Testament II": "Micah 4:9-5:15",
+          "New Testament": "Rom 11:1-16"
+        },
+        "22": {
+          "Old Testament I": "2 Sam 3",
+          "Old Testament II": "Micah 6",
+          "New Testament": "Rom 11:17-36"
+        },
+        "23": {
+          "Old Testament I": "2 Sam 4, 5",
+          "Old Testament II": "Micah 7",
+          "New Testament": "Rom 12"
+        },
+        "24": {
+          "Old Testament I": "2 Sam 6",
+          "Old Testament II": "Nahum 1",
+          "New Testament": "Rom 13"
+        },
+        "25": {
+          "Old Testament I": "2 Sam 7",
+          "Old Testament II": "Nahum 2, 3",
+          "New Testament": "Rom 14:1-18"
+        },
+        "26": {
+          "Old Testament I": "2 Sam 8, 9",
+          "Old Testament II": "Hab 1",
+          "New Testament": "Rom 14:1-15:13"
+        },
+        "27": {
+          "Old Testament I": "2 Sam 10, 11",
+          "Old Testament II": "Hab 2",
+          "New Testament": "Rom 15:14-33"
+        },
+        "28": {
+          "Old Testament I": "2 Sam 12",
+          "Old Testament II": "Hab 3",
+          "New Testament": "Rom 16"
+        },
+        "29": {
+          "Old Testament I": "2 Sam 13",
+          "Old Testament II": "Zeph 1",
+          "New Testament": "Gal 1"
+        },
+        "30": {
+          "Old Testament I": "2 Sam 14",
+          "Old Testament II": "Zeph 2",
+          "New Testament": "Gal 2"
+        },
+        "31": {
+          "Old Testament I": "2 Sam 15",
+          "Old Testament II": "Zeph 3",
+          "New Testament": "Gal 3:1-14"
+        }
+      },
+      "September": {
+        "1": {
+          "Old Testament I": "2 Sam 16, 17",
+          "Old Testament II": "Jer 1",
+          "New Testament": "Gal 3:15-29"
+        },
+        "2": {
+          "Old Testament I": "2 Sam 18:1-19:8",
+          "Old Testament II": "Jer 2",
+          "New Testament": "Gal 4:1-20"
+        },
+        "3": {
+          "Old Testament I": "2 Sam 19:9-43",
+          "Old Testament II": "Jer 3:1-4:2",
+          "New Testament": "Gal 4:21-5:9"
+        },
+        "4": {
+          "Old Testament I": "2 Sam 20",
+          "Old Testament II": "Jer 4:3-31",
+          "New Testament": "Gal 5:10-5:26"
+        },
+        "5": {
+          "Old Testament I": "2 Sam 21",
+          "Old Testament II": "Jer 5",
+          "New Testament": "Gal 6"
+        },
+        "6": {
+          "Old Testament I": "2 Sam 22",
+          "Old Testament II": "Jer 6",
+          "New Testament": "Eph 1:1-14"
+        },
+        "7": {
+          "Old Testament I": "2 Sam 23",
+          "Old Testament II": "Jer 7",
+          "New Testament": "Eph 1:15-2:10"
+        },
+        "8": {
+          "Old Testament I": "2 Sam 24",
+          "Old Testament II": "Jer 8",
+          "New Testament": "Eph 2:11-22"
+        },
+        "9": {
+          "Old Testament I": "1 Kings 1",
+          "Old Testament II": "Jer 9",
+          "New Testament": "Eph 3"
+        },
+        "10": {
+          "Old Testament I": "1 Kings 2",
+          "Old Testament II": "Jer 10",
+          "New Testament": "Eph 4:1-16"
+        },
+        "11": {
+          "Old Testament I": "1 Kings 3",
+          "Old Testament II": "Jer 11",
+          "New Testament": "Eph 4:17-32"
+        },
+        "12": {
+          "Old Testament I": "1 Kings 4, 5",
+          "Old Testament II": "Jer 12",
+          "New Testament": "Eph 5:1-21"
+        },
+        "13": {
+          "Old Testament I": "1 Kings 6",
+          "Old Testament II": "Jer 13",
+          "New Testament": "Eph 5:22-6:9"
+        },
+        "14": {
+          "Old Testament I": "1 Kings 7",
+          "Old Testament II": "Jer 14",
+          "New Testament": "Eph 6:10-24"
+        },
+        "15": {
+          "Old Testament I": "1 Kings 8:1-30",
+          "Old Testament II": "Jer 15",
+          "New Testament": "Phil 1:1-20"
+        },
+        "16": {
+          "Old Testament I": "1 Kings 8:31-66",
+          "Old Testament II": "Jer 16",
+          "New Testament": "Phil 1:21-2:11"
+        },
+        "17": {
+          "Old Testament I": "1 Kings 9",
+          "Old Testament II": "Jer 17",
+          "New Testament": "Phil 2:12-30"
+        },
+        "18": {
+          "Old Testament I": "1 Kings 10",
+          "Old Testament II": "Jer 18",
+          "New Testament": "Phil 3:1-4:1"
+        },
+        "19": {
+          "Old Testament I": "1 Kings 11",
+          "Old Testament II": "Jer 19, 20",
+          "New Testament": "Phil 4:2-23"
+        },
+        "20": {
+          "Old Testament I": "1 Kings 12:1-24",
+          "Old Testament II": "Jer 22",
+          "New Testament": "Col 1:1-20"
+        },
+        "21": {
+          "Old Testament I": "1 Kings 12:25-13:32",
+          "Old Testament II": "Jer 23",
+          "New Testament": "Col 1:21-2:7"
+        },
+        "22": {
+          "Old Testament I": "1 Kings 13:33-14:31",
+          "Old Testament II": "Jer 25",
+          "New Testament": "Col 2:8-3:4"
+        },
+        "23": {
+          "Old Testament I": "1 Kings 15:1-32",
+          "Old Testament II": "Jer 26",
+          "New Testament": "Col 3:5-4:1"
+        },
+        "24": {
+          "Old Testament I": "1 Kings 15:33-16:34",
+          "Old Testament II": "Jer 35",
+          "New Testament": "Col 4:2-18"
+        },
+        "25": {
+          "Old Testament I": "1 Kings 17",
+          "Old Testament II": "Jer 36, 45",
+          "New Testament": "Philemon"
+        },
+        "26": {
+          "Old Testament I": "1 Kings 18",
+          "Old Testament II": "Jer 46, 47",
+          "New Testament": "Heb 1"
+        },
+        "27": {
+          "Old Testament I": "1 Kings 19",
+          "Old Testament II": "Jer 48",
+          "New Testament": "Heb 2"
+        },
+        "28": {
+          "Old Testament I": "1 Kings 20",
+          "Old Testament II": "Jer 49",
+          "New Testament": "Heb 3"
+        },
+        "29": {
+          "Old Testament I": "1 Kings 21",
+          "Old Testament II": "Jer 50",
+          "New Testament": "Heb 4:1-13"
+        },
+        "30": {
+          "Old Testament I": "1 Kings 22",
+          "Old Testament II": "Jer 51",
+          "New Testament": "Heb 4:14-5:10"
+        }
+      },
+      "October": {
+        "1": {
+          "Old Testament I": "2 Kings 1",
+          "Old Testament II": "Jer 51:25-64",
+          "New Testament": "Heb 5:11-6:20"
+        },
+        "2": {
+          "Old Testament I": "2 Kings 2",
+          "Old Testament II": "Jer 24, 29",
+          "New Testament": "Heb 7"
+        },
+        "3": {
+          "Old Testament I": "2 Kings 3",
+          "Old Testament II": "Jer 30",
+          "New Testament": "Heb 8"
+        },
+        "4": {
+          "Old Testament I": "2 Kings 4",
+          "Old Testament II": "Jer 31",
+          "New Testament": "Heb 9:1-14"
+        },
+        "5": {
+          "Old Testament I": "2 Kings 5",
+          "Old Testament II": "Jer 27, 28",
+          "New Testament": "Heb 9:15-28"
+        },
+        "6": {
+          "Old Testament I": "2 Kings 6:1-23",
+          "Old Testament II": "Jer 21, 34",
+          "New Testament": "Heb 10:1-18"
+        },
+        "7": {
+          "Old Testament I": "2 Kings 6:24-7:20",
+          "Old Testament II": "Jer 37",
+          "New Testament": "Heb 10:19-39"
+        },
+        "8": {
+          "Old Testament I": "2 Kings 8",
+          "Old Testament II": "Jer 32:1-25",
+          "New Testament": "Heb 11:1-16"
+        },
+        "9": {
+          "Old Testament I": "2 Kings 9",
+          "Old Testament II": "Jer 32:26-44",
+          "New Testament": "Heb 11:17-40"
+        },
+        "10": {
+          "Old Testament I": "2 Kings 10",
+          "Old Testament II": "Jer 33",
+          "New Testament": "Heb 12:1-17"
+        },
+        "11": {
+          "Old Testament I": "2 Kings 11, 12",
+          "Old Testament II": "Jer 38",
+          "New Testament": "Heb 12:18-13:6"
+        },
+        "12": {
+          "Old Testament I": "2 Kings 13:1-14:22",
+          "Old Testament II": "Jer 39",
+          "New Testament": "Heb 13:7-25"
+        },
+        "13": {
+          "Old Testament I": "2 Kings 14:23-15:31",
+          "Old Testament II": "Jer 40",
+          "New Testament": "Titus 1:1-2:8"
+        },
+        "14": {
+          "Old Testament I": "2 Kings 15:32-16:20",
+          "Old Testament II": "Jer 41",
+          "New Testament": "Titus 2:9-3:15"
+        },
+        "15": {
+          "Old Testament I": "2 Kings 17",
+          "Old Testament II": "Jer 42, 43",
+          "New Testament": "1 Tim 1"
+        },
+        "16": {
+          "Old Testament I": "2 Kings 18",
+          "Old Testament II": "Jer 44",
+          "New Testament": "1 Tim 2"
+        },
+        "17": {
+          "Old Testament I": "2 Kings 19",
+          "Old Testament II": "Jer 52",
+          "New Testament": "1 Tim 3"
+        },
+        "18": {
+          "Old Testament I": "2 Kings 20:1-21:18",
+          "Old Testament II": "Lam 1",
+          "New Testament": "1 Tim 4"
+        },
+        "19": {
+          "Old Testament I": "2 Kings 21:19-22:20",
+          "Old Testament II": "Lam 2",
+          "New Testament": "1 Tim 5"
+        },
+        "20": {
+          "Old Testament I": "2 Kings 23",
+          "Old Testament II": "Lam 3",
+          "New Testament": "1 Tim 6"
+        },
+        "21": {
+          "Old Testament I": "2 Kings 24",
+          "Old Testament II": "Lam 4, 5",
+          "New Testament": "2 Tim 1"
+        },
+        "22": {
+          "Old Testament I": "2 Kings 25",
+          "Old Testament II": "Ezek 1",
+          "New Testament": "2 Tim 2"
+        },
+        "23": {
+          "Old Testament I": "1 Chron 1",
+          "Old Testament II": "Ezek 2:1-3:15",
+          "New Testament": "2 Tim 3"
+        },
+        "24": {
+          "Old Testament I": "1 Chron 2",
+          "Old Testament II": "Ezek 3:16-4:17",
+          "New Testament": "2 Tim 4"
+        },
+        "25": {
+          "Old Testament I": "1 Chron 3:1-4:23",
+          "Old Testament II": "Ezek 5, 6",
+          "New Testament": "1 John 1:1-18"
+        },
+        "26": {
+          "Old Testament I": "1 Chron 4:24-5:26",
+          "Old Testament II": "Ezek 7",
+          "New Testament": "1 John 1:19-51"
+        },
+        "27": {
+          "Old Testament I": "1 Chron 6",
+          "Old Testament II": "Ezek 8, 9",
+          "New Testament": "John 2:1-22"
+        },
+        "28": {
+          "Old Testament I": "1 Chron 7",
+          "Old Testament II": "Ezek 10",
+          "New Testament": "John 2:23-3:21"
+        },
+        "29": {
+          "Old Testament I": "1 Chron 8, 9",
+          "Old Testament II": "Ezek 11",
+          "New Testament": "John 3:22-36"
+        },
+        "30": {
+          "Old Testament I": "1 Chron 10, 11",
+          "Old Testament II": "Ezek 12",
+          "New Testament": "John 4:1-30"
+        },
+        "31": {
+          "Old Testament I": "1 Chron 12",
+          "Old Testament II": "Ezek 13",
+          "New Testament": "John 4:31-54"
+        }
+      },
+      "November": {
+        "1": {
+          "Old Testament I": "1 Chron 13, 14",
+          "Old Testament II": "Ezek 14, 15",
+          "New Testament": "1 John 5:1-23"
+        },
+        "2": {
+          "Old Testament I": "1 Chron 15",
+          "Old Testament II": "Ezek 16:1-34",
+          "New Testament": "John 5:24-47"
+        },
+        "3": {
+          "Old Testament I": "1 Chron 16",
+          "Old Testament II": "Ezek 16:35-63",
+          "New Testament": "John 6:1-21"
+        },
+        "4": {
+          "Old Testament I": "1 Chron 17, 18",
+          "Old Testament II": "Ezek 17",
+          "New Testament": "John 6:22-40"
+        },
+        "5": {
+          "Old Testament I": "1 Chron 19, 20",
+          "Old Testament II": "Ezek 18, 19",
+          "New Testament": "John 6:41-71"
+        },
+        "6": {
+          "Old Testament I": "1 Chron 21",
+          "Old Testament II": "Ezek 20:1-44",
+          "New Testament": "John 7:2-30"
+        },
+        "7": {
+          "Old Testament I": "1 Chron 22, 23",
+          "Old Testament II": "Ezek 20:45-21:32",
+          "New Testament": "John 7:31-8:11"
+        },
+        "8": {
+          "Old Testament I": "1 Chron 24, 25",
+          "Old Testament II": "Ezek 22",
+          "New Testament": "John 8:12-30"
+        },
+        "9": {
+          "Old Testament I": "1 Chron 26, 27",
+          "Old Testament II": "Ezek 23",
+          "New Testament": "John 8:31-59"
+        },
+        "10": {
+          "Old Testament I": "1 Chron 28",
+          "Old Testament II": "Ezek 24, 25",
+          "New Testament": "John 9:1-17"
+        },
+        "11": {
+          "Old Testament I": "1 Chron 29",
+          "Old Testament II": "Ezek 26",
+          "New Testament": "John 9:18-38"
+        },
+        "12": {
+          "Old Testament I": "2 Chron 1, 2",
+          "Old Testament II": "Ezek 27",
+          "New Testament": "John 9:39-10:18"
+        },
+        "13": {
+          "Old Testament I": "2 Chron 3, 4",
+          "Old Testament II": "Ezek 28",
+          "New Testament": "John 10:19-42"
+        },
+        "14": {
+          "Old Testament I": "2 Chron 5:1-6:11",
+          "Old Testament II": "Ezek 29:1-30:19",
+          "New Testament": "John 11:1-27"
+        },
+        "15": {
+          "Old Testament I": "2 Chron 6:12-42",
+          "Old Testament II": "Ezek 30:20-31:18",
+          "New Testament": "John 11:28-54"
+        },
+        "16": {
+          "Old Testament I": "2 Chron 7",
+          "Old Testament II": "Ezek 32",
+          "New Testament": "John 11:55-12:19"
+        },
+        "17": {
+          "Old Testament I": "2 Chron 8, 9",
+          "Old Testament II": "Ezek 33",
+          "New Testament": "John 12:20-50"
+        },
+        "18": {
+          "Old Testament I": "2 Chron 10, 11",
+          "Old Testament II": "Ezek 34",
+          "New Testament": "John 13:1-30"
+        },
+        "19": {
+          "Old Testament I": "2 Chron 12, 13",
+          "Old Testament II": "Ezek 35:1-36:15",
+          "New Testament": "John 13:31-14:14"
+        },
+        "20": {
+          "Old Testament I": "2 Chron 14, 15",
+          "Old Testament II": "Ezek 36:16-38",
+          "New Testament": "John 14:15-31"
+        },
+        "21": {
+          "Old Testament I": "2 Chron 16, 17",
+          "Old Testament II": "Ezek 37",
+          "New Testament": "John 15:1-16"
+        },
+        "22": {
+          "Old Testament I": "2 Chron 18, 19",
+          "Old Testament II": "Ezek 38",
+          "New Testament": "John 15:17-16:15"
+        },
+        "23": {
+          "Old Testament I": "2 Chron 20",
+          "Old Testament II": "Ezek 39",
+          "New Testament": "John 16:16-33"
+        },
+        "24": {
+          "Old Testament I": "2 Chron 21, 22",
+          "Old Testament II": "Ezek 40",
+          "New Testament": "John 17"
+        },
+        "25": {
+          "Old Testament I": "2 Chron 23, 24",
+          "Old Testament II": "Ezek 41",
+          "New Testament": "John 18:1-27"
+        },
+        "26": {
+          "Old Testament I": "2 Chron 25",
+          "Old Testament II": "Ezek 42",
+          "New Testament": "John 18:28-19:16"
+        },
+        "27": {
+          "Old Testament I": "2 Chron 26",
+          "Old Testament II": "Ezek 43",
+          "New Testament": "John 19:17-42"
+        },
+        "28": {
+          "Old Testament I": "2 Chron 27, 28",
+          "Old Testament II": "Ezek 44",
+          "New Testament": "John 20"
+        },
+        "29": {
+          "Old Testament I": "2 Chron 29",
+          "Old Testament II": "Ezek 45",
+          "New Testament": "John 21"
+        },
+        "30": {
+          "Old Testament I": "2 Chron 30",
+          "Old Testament II": "Ezek 46",
+          "New Testament": "1 John 1"
+        }
+      },
+      "December": {
+        "1": {
+          "Old Testament I": "2 Chron 31",
+          "Old Testament II": "Ezek 47",
+          "New Testament": "1 John 2:1-17"
+        },
+        "2": {
+          "Old Testament I": "2 Chron 32",
+          "Old Testament II": "Ezek 48",
+          "New Testament": "1 John 2:18-29"
+        },
+        "3": {
+          "Old Testament I": "2 Chron 33",
+          "Old Testament II": "Daniel 1",
+          "New Testament": "1 John 3"
+        },
+        "4": {
+          "Old Testament I": "2 Chron 34",
+          "Old Testament II": "Daniel 2:1-23",
+          "New Testament": "1 John 4"
+        },
+        "5": {
+          "Old Testament I": "2 Chron 35",
+          "Old Testament II": "Daniel 2:24-49",
+          "New Testament": "1 John 5"
+        },
+        "6": {
+          "Old Testament I": "2 Chron 36",
+          "Old Testament II": "Daniel 3",
+          "New Testament": "2 John"
+        },
+        "7": {
+          "Old Testament I": "Ezra 1, 2",
+          "Old Testament II": "Daniel 4",
+          "New Testament": "3 John"
+        },
+        "8": {
+          "Old Testament I": "Ezra 3, 4",
+          "Old Testament II": "Daniel 5",
+          "New Testament": "Rev 1"
+        },
+        "9": {
+          "Old Testament I": "Ezra 5",
+          "Old Testament II": "Daniel 6",
+          "New Testament": "Rev 2:1-17"
+        },
+        "10": {
+          "Old Testament I": "Ezra 6",
+          "Old Testament II": "Daniel 7",
+          "New Testament": "Rev 2:18-3:6"
+        },
+        "11": {
+          "Old Testament I": "Ezra 7",
+          "Old Testament II": "Daniel 8",
+          "New Testament": "Rev 3:7-22"
+        },
+        "12": {
+          "Old Testament I": "Ezra 8",
+          "Old Testament II": "Daniel 9",
+          "New Testament": "Rev 4"
+        },
+        "13": {
+          "Old Testament I": "Ezra 9",
+          "Old Testament II": "Daniel 10",
+          "New Testament": "Rev 5"
+        },
+        "14": {
+          "Old Testament I": "Ezra 10",
+          "Old Testament II": "Daniel 11:1-20",
+          "New Testament": "Rev 6"
+        },
+        "15": {
+          "Old Testament I": "Neh 1, 2",
+          "Old Testament II": "Daniel 11:21-45",
+          "New Testament": "Rev 7"
+        },
+        "16": {
+          "Old Testament I": "Neh 3",
+          "Old Testament II": "Daniel 12",
+          "New Testament": "Rev 8"
+        },
+        "17": {
+          "Old Testament I": "Neh 4",
+          "Old Testament II": "Haggai 1",
+          "New Testament": "Rev 9"
+        },
+        "18": {
+          "Old Testament I": "Neh 5",
+          "Old Testament II": "Haggai 2",
+          "New Testament": "Rev 10"
+        },
+        "19": {
+          "Old Testament I": "Neh 6",
+          "Old Testament II": "Zech 1",
+          "New Testament": "Rev 11"
+        },
+        "20": {
+          "Old Testament I": "Neh 7",
+          "Old Testament II": "Zech 2, 3",
+          "New Testament": "Rev 12"
+        },
+        "21": {
+          "Old Testament I": "Neh 8",
+          "Old Testament II": "Zech 4",
+          "New Testament": "Rev 13"
+        },
+        "22": {
+          "Old Testament I": "Neh 9",
+          "Old Testament II": "Zech 5, 6",
+          "New Testament": "Rev 14"
+        },
+        "23": {
+          "Old Testament I": "Neh 10, 11",
+          "Old Testament II": "Zech 7",
+          "New Testament": "Rev 15"
+        },
+        "24": {
+          "Old Testament I": "Neh 12",
+          "Old Testament II": "Zech 8",
+          "New Testament": "Rev 16"
+        },
+        "25": {
+          "Old Testament I": "Neh 13",
+          "Old Testament II": "Zech 9, 10",
+          "New Testament": "Rev 17"
+        },
+        "26": {
+          "Old Testament I": "Esther 1",
+          "Old Testament II": "Zech 11",
+          "New Testament": "Rev 18"
+        },
+        "27": {
+          "Old Testament I": "Esther 2",
+          "Old Testament II": "Zech 12:1-13:6",
+          "New Testament": "Rev 19:1-10"
+        },
+        "28": {
+          "Old Testament I": "Esther 3, 4",
+          "Old Testament II": "Zech 13:7-14:21",
+          "New Testament": "Rev 19:11-20:6"
+        },
+        "29": {
+          "Old Testament I": "Esther 5, 6",
+          "Old Testament II": "Malachi 1:1-2:9",
+          "New Testament": "Rev 20:7-21:8"
+        },
+        "30": {
+          "Old Testament I": "Esther 7, 8",
+          "Old Testament II": "Malachi 2:10-3:6",
+          "New Testament": "Rev 21:9-22:5"
+        },
+        "31": {
+          "Old Testament I": "Esther 9, 10",
+          "Old Testament II": "Malachi 3:7-4:6",
+          "New Testament": "Rev 22:6-21"
+        }
+      }
+    }
+  }
+}

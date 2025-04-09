@@ -22,6 +22,8 @@ type MonthName =
   | "November"
   | "December";
 
+// ... (import statements remain unchanged)
+
 const BibleCalendar = () => {
   const [selectedDate, setSelectedDate] = useState<string>(
     new Date().toISOString().split("T")[0]
@@ -30,58 +32,16 @@ const BibleCalendar = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
-  const [selectedSection, setSelectedSection] = useState("New Testament");
-
-        // @ts-ignore
-  const renderCalendarDays = (month: string) => {
-    const daysInMonth = new Date(
-      new Date().getFullYear(),
-      new Date().getMonth() + 1,
-      0
-    ).getDate();
-    return Array.from({ length: daysInMonth }, (_, i) => i + 1).map((date) => (
-      <div
-        key={date}
-        className={`calendar-day ${
-          isToday(
-            `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${date}`
-          )
-            ? "bg-blue-500 text-white"
-            : ""
-        }`}
-        data-date={date}
-        onClick={() =>
-          setSelectedDate(
-            `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${date}`
-          )
-        }
-      >
-        {date}
-        <button
-          className="bookmark-btn"
-          onClick={() =>
-            toggleBookmark(
-              `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${date}`
-            )
-          }
-        >
-          ☆
-        </button>
-      </div>
-    ));
-  };
+  const [selectedSection, setSelectedSection] = useState("Old Testament I & II, New Testament");
 
   const toggleBookmark = (date: string): void => {
-    let updatedBookmarks = [...bookmarks];
-    if (updatedBookmarks.includes(date)) {
-      updatedBookmarks = updatedBookmarks.filter(
-        (bookmark) => bookmark !== date
-      );
-    } else {
-      updatedBookmarks.push(date);
-    }
-    localStorage.setItem("bookmarks", JSON.stringify(updatedBookmarks));
-    setBookmarks(updatedBookmarks);
+    setBookmarks((prev) => {
+      const updated = prev.includes(date)
+        ? prev.filter((d) => d !== date)
+        : [...prev, date];
+      localStorage.setItem("bookmarks", JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const isBookmarked = (date: string): boolean => {
@@ -89,9 +49,7 @@ const BibleCalendar = () => {
   };
 
   useEffect(() => {
-    const storedBookmarks = JSON.parse(
-      localStorage.getItem("bookmarks") || "[]"
-    );
+    const storedBookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
     setBookmarks(storedBookmarks);
   }, []);
 
@@ -129,6 +87,36 @@ const BibleCalendar = () => {
     setSelectedDate(currentDate.toISOString().split("T")[0]);
   };
 
+  const renderCalendarDays = (month: string) => {
+    const year = new Date().getFullYear();
+    const monthIndex = new Date().getMonth();
+    const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+
+    return Array.from({ length: daysInMonth }, (_, i) => i + 1).map((date) => {
+      const fullDate = `${year}-${monthIndex + 1}-${date}`;
+      return (
+        <div
+          key={date}
+          className={`calendar-day p-2 rounded shadow-md cursor-pointer hover:bg-blue-100 ${
+            isToday(fullDate) ? "bg-blue-500 text-white" : ""
+          }`}
+          onClick={() => setSelectedDate(fullDate)}
+        >
+          {date}
+          <button
+            className="ml-2"
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleBookmark(fullDate);
+            }}
+          >
+            {isBookmarked(fullDate) ? "⭐" : "☆"}
+          </button>
+        </div>
+      );
+    });
+  };
+
   const fetchBibleVerse = async (
     passage: string,
     title: string
@@ -144,9 +132,7 @@ const BibleCalendar = () => {
       if (data.verses) {
         const formattedVerses = data.verses
           .map((verse: { chapter: number; verse: number; text: string }) => {
-            return `<div>${verse.chapter}:${
-              verse.verse
-            }. ${verse.text.trim()}</div><hr class="border-t border-gray-300 dark:border-gray-950 mt-2" />`;
+            return `<div>${verse.chapter}:${verse.verse}. ${verse.text.trim()}</div><hr class="border-t border-gray-300 dark:border-gray-950 mt-2" />`;
           })
           .join("");
         return `📖 ${title}: ${passage}<br /><br />${formattedVerses}`;
@@ -164,10 +150,9 @@ const BibleCalendar = () => {
       setLoading(true);
       const monthName = getMonthName(selectedDate);
       const day = getDay(selectedDate).toString();
+      const monthData = bibleReadingPlan.yearly_bible_calendar.months[monthName];
 
-      const monthData =
-        bibleReadingPlan.yearly_bible_calendar.months[monthName];
-      // @ts-ignore
+      //@ts-ignore
       const readingPlan = monthData ? monthData[day] : null;
 
       if (readingPlan) {
@@ -176,6 +161,7 @@ const BibleCalendar = () => {
           "Old Testament II": old2,
           "New Testament": newT,
         } = readingPlan;
+
         const sectionsToFetch: Promise<string>[] = [];
 
         if (selectedSection === "Old Testament I") {
@@ -196,7 +182,6 @@ const BibleCalendar = () => {
           sectionsToFetch.push(fetchBibleVerse(old2, "Old Testament II"));
           sectionsToFetch.push(fetchBibleVerse(newT, "New Testament"));
         }
-
 
         if (sectionsToFetch.length === 0) {
           setReading(null);
@@ -232,7 +217,7 @@ const BibleCalendar = () => {
 
   return (
     <div className="p-4 min-h-screen">
-      {/* Render Calendar Days */}
+      {/* Navigation */}
       <div className="flex justify-between items-center mb-2">
         <button
           onClick={() => navigateDay(-1)}
@@ -251,11 +236,12 @@ const BibleCalendar = () => {
         </button>
       </div>
 
+      {/* Calendar */}
       <div className="flex flex-wrap justify-center gap-2 p-4 w-full max-w-6xl mx-auto rounded-md text-black bg-blue-50">
         {renderCalendarDays(getMonthName(selectedDate))}
       </div>
 
-      {/* Select Section and Date */}
+      {/* Controls */}
       <div className="flex flex-wrap justify-between items-end w-full h-auto p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md">
         <div className="w-full sm:w-1/2 lg:w-1/3 mb-4 sm:mb-0 mr-4">
           <label className="block font-semibold text-gray-800 dark:text-white mb-2">
@@ -264,11 +250,10 @@ const BibleCalendar = () => {
           <select
             value={selectedSection}
             onChange={(e) => setSelectedSection(e.target.value)}
-            className="w-full p-3 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-700 dark:text-white transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
             <option value="Old Testament I & II">Old Testament I & II</option>
             <option value="Old Testament I & II, New Testament">
-              {" "}
               Old Testament I & II, New Testament
             </option>
             <option value="New Testament">New Testament</option>
@@ -283,59 +268,47 @@ const BibleCalendar = () => {
             type="date"
             value={selectedDate}
             onChange={(e) => setSelectedDate(e.target.value)}
-            className="w-full p-3 border rounded-md bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border rounded-md bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700"
           />
         </div>
 
         <div className="flex gap-x-4 mt-4 sm:mt-0">
           <button
             onClick={() => toggleBookmark(selectedDate)}
-            className="flex items-center p-3 bg-yellow-400 dark:bg-yellow-600 text-gray-900 dark:text-white rounded-md shadow-md transition duration-200 ease-in-out hover:bg-yellow-500 dark:hover:bg-yellow-500"
+            className="flex items-center p-3 bg-yellow-400 dark:bg-yellow-600 text-gray-900 dark:text-white rounded-md shadow-md"
           >
             {isBookmarked(selectedDate) ? "⭐ Bookmarked" : "☆ Bookmark"}
           </button>
 
           <button
             onClick={toggleDarkMode}
-            className="flex items-center p-3 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md shadow-md transition duration-200 ease-in-out hover:bg-gray-300 dark:hover:bg-gray-600"
+            className="flex items-center p-3 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md shadow-md"
           >
             {darkMode ? "☀️ Light" : "🌙 Dark"}
           </button>
         </div>
       </div>
 
+      {/* Loading */}
       {loading && <p className="mt-4">🔄 Loading...</p>}
 
+      {/* Readings */}
       {reading && (
         <div className="max-w-screen-lg mx-auto mt-6 space-y-4">
           <ReadingSection
             title="📜 Old Testament I"
             content={reading.oldTestament1}
-            bgClass={
-              darkMode
-                ? "bg-gray-900 text-white"
-                : "bg-blue-100 dark:bg-blue-900"
-            }
+            bgClass={darkMode ? "bg-gray-900 text-white" : "bg-blue-100"}
           />
-
           <ReadingSection
             title="📜 Old Testament II"
             content={reading.oldTestament2}
-            bgClass={
-              darkMode
-                ? "bg-gray-900 text-white"
-                : "bg-green-100 dark:bg-green-900"
-            }
+            bgClass={darkMode ? "bg-gray-900 text-white" : "bg-green-100"}
           />
-
           <ReadingSection
             title="📜 New Testament"
             content={reading.newTestament}
-            bgClass={
-              darkMode
-                ? "bg-gray-900 text-white"
-                : "bg-yellow-100 dark:bg-yellow-900"
-            }
+            bgClass={darkMode ? "bg-gray-900 text-white" : "bg-yellow-100"}
           />
         </div>
       )}

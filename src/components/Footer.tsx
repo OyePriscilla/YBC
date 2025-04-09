@@ -1,7 +1,6 @@
-// Footer.tsx
 const Footer = () => {
   return (
-    <footer className="mt-10 bg-gray-100 dark:bg-blue-800 text-gray-700 dark:text-gray-300 px-6 py-10">
+    <footer className="mt-10 bg-gray-900 dark:bg-blue-900 text-gray-200 dark:text-gray-300 px-6 py-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Column */}
         <div>

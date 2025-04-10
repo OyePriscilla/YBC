@@ -87,7 +87,7 @@ const BibleCalendar = () => {
     setSelectedDate(currentDate.toISOString().split("T")[0]);
   };
 
-  // @ts-expect-error: The next line causes an error, but it's intentional
+        //@ts-ignore
   const renderCalendarDays = (month: string) => {
     const year = new Date().getFullYear();
     const monthIndex = new Date().getMonth();

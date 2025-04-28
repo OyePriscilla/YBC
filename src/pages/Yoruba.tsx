@@ -1,173 +1,169 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import bibleReadingPlan from "../data/bibleReadingPlan.json";
+import yorubaBible from "../data/yoruba_bible_named.json";
+import bookMap from "../data/bookMap.json";
 
-const API_KEY = import.meta.env.VITE_BIBLE_API_KEY;
-const BIBLE_ID = "b8d1feac6e94bd74-01"; // Yoruba Bible
+export default function YorubaBibleCalendar() {
+  const [selectedDate, setSelectedDate] = useState<string>(
+    new Date().toISOString().split("T")[0]
+  );
+  const [readings, setReadings] = useState<any>(null);
+  const [expandedSection, setExpandedSection] =
+    useState<string>("Old Testament I");
+  const [bookmarks, setBookmarks] = useState<{ [key: string]: boolean }>({});
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
-type Book = {
-  id: string;
-  name: string;
-};
-
-type Chapter = {
-  id: string;
-  number: string; // API sometimes returns as string
-};
-
-type Verse = {
-  id: string;
-  text: string;
-  reference?: string;
-  verse?: string;
-};
-
-const Yoruba = () => {
-  const [books, setBooks] = useState<Book[]>([]);
-  const [selectedBookId, setSelectedBookId] = useState("");
-  const [chapters, setChapters] = useState<Chapter[]>([]);
-  const [selectedChapter, setSelectedChapter] = useState("");
-  const [verses, setVerses] = useState<string | Verse[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-
-  // Fetch books
   useEffect(() => {
-    const fetchBooks = async () => {
-      try {
-        const response = await axios.get(
-          `https://api.scripture.api.bible/v1/bibles/${BIBLE_ID}/books`,
-          {
-            headers: {
-              "api-key": API_KEY,
-            },
-          }
-        );
-        setBooks(response.data.data);
-      } catch (error) {
-        console.error("Error fetching books:", error);
-      }
-    };
-    fetchBooks();
+    const selected = new Date(selectedDate);
+    const month = selected.toLocaleString("default", { month: "long" });
+    const day = selected.getDate().toString()
+    const plan = (bibleReadingPlan as any)?.yearly_bible_calendar?.months?.[
+      month
+    ]?.[day];
+    setReadings(plan || null);
+  }, [selectedDate]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("yoruba_bible_bookmarks");
+    if (saved) setBookmarks(JSON.parse(saved));
   }, []);
 
-  // Fetch chapters when a book is selected
-  useEffect(() => {
-    const fetchChapters = async () => {
-      if (!selectedBookId) return;
-      try {
-        const response = await axios.get(
-          `https://api.scripture.api.bible/v1/bibles/${BIBLE_ID}/books/${selectedBookId}/chapters`,
-          {
-            headers: {
-              "api-key": API_KEY,
-            },
-          }
-        );
-        setChapters(response.data.data);
-      } catch (error) {
-        console.error("Error fetching chapters:", error);
-      }
-    };
-    fetchChapters();
-  }, [selectedBookId]);
+  const toggleBookmark = (ref: string) => {
+    const updated = { ...bookmarks, [ref]: !bookmarks[ref] };
+    setBookmarks(updated);
+    localStorage.setItem("yoruba_bible_bookmarks", JSON.stringify(updated));
+  };
+  const getYorubaPassageText = (reference: string) => {
+    if (!reference) return "No reference provided.";
 
-  // Fetch verses when a chapter is selected
-  useEffect(() => {
-    const fetchChapterContent = async () => {
-      if (!selectedChapter) return;
-      setIsLoading(true);
-      try {
-        const response = await axios.get(
-          `https://api.scripture.api.bible/v1/bibles/${BIBLE_ID}/chapters/${selectedChapter}`,
-          {
-            headers: {
-              "api-key": API_KEY,
-            },
-          }
-        );
-        const content = response.data.data.content;
-        const items = response.data.data.verses;
-        setVerses(items?.length ? items : content);
-      } catch (error) {
-        console.error("Error fetching verses:", error);
-      } finally {
-        setIsLoading(false);
+    const parts = reference.trim().split(" ");
+    if (parts.length < 2) return "Invalid reference format.";
+
+    const range = parts[parts.length - 1]; // last part is the range
+    const book = parts.slice(0, -1).join(" "); // rest is the book name
+
+    const yorubaBook = (bookMap as any)[book];
+    if (!yorubaBook) return `📚 Book not found: ${book}`;
+
+    const source =
+      (yorubaBible as any).Old[yorubaBook] ||
+      (yorubaBible as any).New[yorubaBook];
+
+    if (!source) return `📚 Book not found: ${yorubaBook}`;
+
+    let text = "";
+
+    if (range.includes("-")) {
+      const [start, end] = range.split("-");
+      const [startChap, startVerse] = start.split(":").map(Number);
+      const [endChap, endVerse] = (end?.split(":") || [startChap, startVerse]).map(Number);
+      for (let ch = startChap; ch <= endChap; ch++) {
+        const verses = source?.[ch.toString()];
+        if (!verses) continue;
+        const from = ch === startChap ? startVerse : 1;
+        const to = ch === endChap ? endVerse : verses.length;
+        for (let i = from - 1; i < to; i++) {
+          const v = verses[i];
+          if (v) text += `${ch}:${v.verse} ${v.text}\n`;
+        }
       }
-    };
-    fetchChapterContent();
-  }, [selectedChapter]);
+    } else if (range.includes(":")) {
+      const [chapter, verse] = range.split(":").map(Number);
+      const verses = source?.[chapter.toString()];
+      const v = verses?.[verse - 1];
+      return v ? `${chapter}:${v.verse} ${v.text}` : "Verse not found.";
+    } else {
+      const chapter = parseInt(range);
+      const verses = source?.[chapter.toString()];
+      if (!verses) return "Chapter not found.";
+      for (const v of verses) {
+        text += `${chapter}:${v.verse} ${v.text}\n`;
+      }
+    }
+
+    return text || "🔍 Passage not found.";
+  };
+
+
 
   return (
-    <div className="pb-24 max-w-4xl mx-auto p-6 text-gray-900 dark:text-white">
-      <h1 className="text-2xl font-bold text-center mb-4">📖 Bíbélì Mímọ́ Yorùbá</h1>
-
-      {/* Selectors */}
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
-        <select
-          className="w-full p-2 border rounded"
-          onChange={(e) => {
-            setSelectedBookId(e.target.value);
-            setSelectedChapter("");
-            setChapters([]);
-            setVerses([]);
-          }}
-          value={selectedBookId}
+    <div
+      style={{ fontFamily: "EB Garamond" }}
+      className={`min-h-screen p-4 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}
+    >
+      <div className="flex items-center justify-between mb-4">
+        <h1 className="text-2xl font-bold">📖 Yoruba Bible Daily Reading</h1>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
         >
-          <option value="">📚 Select Book</option>
-          {books.map((book) => (
-            <option key={book.id} value={book.id}>
-              {book.name}
-            </option>
-          ))}
-        </select>
-
-        <select
-          className="w-full p-2 border rounded"
-          onChange={(e) => setSelectedChapter(e.target.value)}
-          value={selectedChapter}
-          disabled={!chapters.length}
-        >
-          <option value="">📘 Select Chapter</option>
-          {chapters.map((chapter) => (
-            <option key={chapter.id} value={chapter.id}>
-              Chapter {chapter.number}
-            </option>
-          ))}
-        </select>
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
       </div>
 
-      {/* Verses Display */}
-      {isLoading ? (
-        <p className="text-center text-lg">⏳ N ń kó àyọkà wá...</p>
-      ) : (
-        <div className="space-y-3">
-          {selectedChapter && verses.length === 0 && (
-            <p className="italic text-center">Ko si àyọkà fun ori yìí.</p>
-          )}
-
-          {/* Display string HTML (fallback) */}
-          {typeof verses === "string" ? (
-            <div
-              className="bg-white border p-4 rounded shadow prose max-w-none"
-              dangerouslySetInnerHTML={{ __html: verses }}
-            />
-          ) : (
-            // Display each verse in new line
-            verses.map((verse: Verse, idx) => (
+      <div className="flex gap-4 flex-wrap mb-6">
+        <input
+          type="date"
+          value={selectedDate}
+          onChange={(e) => setSelectedDate(e.target.value)}
+          className="border rounded px-3 py-2"
+        />
+      </div>
+      {readings ? (
+        <div className="space-y-4">
+          {["Old Testament I", "Old Testament II", "New Testament"].map(
+            (section) => (
               <div
-                key={idx}
-                className="bg-white border p-3 rounded shadow whitespace-pre-wrap"
+                key={section}
+                className={`border rounded shadow ${
+                  darkMode
+                    ? "bg-gray-800 border-gray-600"
+                    : "bg-gray-100 border-gray-300"
+                }`}
               >
-                <p>
-                  <span className="font-bold whitespace-pre-wrap">Verse {verse.verse ?? idx + 1}:</span>{" "}
-                  <span dangerouslySetInnerHTML={{ __html: verse.text }} />
-                </p>
+                <div
+                  className="flex items-center justify-between px-4 py-2 cursor-pointer"
+                  onClick={() =>
+                    setExpandedSection((prev) =>
+                      prev === section ? "" : section
+                    )
+                  }
+                >
+                  <h2 className="text-xl font-semibold">
+                    {section}: {readings[section]}
+                  </h2>
+                  <div className="flex gap-3">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleBookmark(readings[section]);
+                      }}
+                      className={`text-xl ${
+                        bookmarks[readings[section]]
+                          ? "text-yellow-400"
+                          : "text-gray-400"
+                      } hover:text-yellow-500`}
+                      title="Bookmark"
+                    >
+                      ★
+                    </button>
+                    <span>{expandedSection === section ? "🔽" : "▶️"}</span>
+                  </div>
+                </div>
+                {expandedSection === section && (
+                  <pre className="p-4 whitespace-pre-wrap text-lg">
+                    {getYorubaPassageText(readings[section])}
+                  </pre>
+                )}
               </div>
-            ))
+            )
           )}
         </div>
+      ) : (
+        <p className="text-red-500">❌ No reading found for this date.</p>
       )}
     </div>
   );
-};
-
-export default Yoruba;
+}

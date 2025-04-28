@@ -6,7 +6,9 @@ interface Reading {
   oldTestament1: string;
   oldTestament2: string;
   newTestament: string;
-}
+  }
+
+
 
 type MonthName =
   | "January"
@@ -33,6 +35,8 @@ const BibleCalendar = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [selectedSection, setSelectedSection] = useState("Old Testament I & II, New Testament");
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
 
   const toggleBookmark = (date: string): void => {
     setBookmarks((prev) => {
@@ -81,7 +85,7 @@ const BibleCalendar = () => {
     return date.getDate();
   };
 
-  const navigateDay = (offset: number) => {
+ const navigateDay = (offset: number) => {
     const currentDate = new Date(selectedDate);
     currentDate.setDate(currentDate.getDate() + offset);
     setSelectedDate(currentDate.toISOString().split("T")[0]);
@@ -300,16 +304,19 @@ const BibleCalendar = () => {
             title="📜 Old Testament I"
             content={reading.oldTestament1}
             bgClass={darkMode ? "bg-gray-900 text-white" : "bg-blue-100"}
+            initiallyOpen={true}
           />
           <ReadingSection
             title="📜 Old Testament II"
             content={reading.oldTestament2}
             bgClass={darkMode ? "bg-gray-900 text-white" : "bg-green-100"}
+            initiallyOpen={false}
           />
           <ReadingSection
             title="📜 New Testament"
             content={reading.newTestament}
             bgClass={darkMode ? "bg-gray-900 text-white" : "bg-yellow-100"}
+            initiallyOpen={false}
           />
         </div>
       )}

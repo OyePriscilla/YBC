@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import SearchBar from "../components/searchBar";
+// import SearchBar from "../components/searchBar";
 
 // Type for search result verses
 type SearchResult = {
@@ -30,14 +30,16 @@ const English: React.FC = () => {
 
   const [selectedBook, setSelectedBook] = useState("Genesis");
   const [verses, setVerses] = useState<string[]>([]);
-  const [selectedChapter, setSelectedChapter] = useState<number | null>(1);
+  const [selectedChapter, setSelectedChapter] = useState<number>(1);
   const [chapterText, setChapterText] = useState<string>("");
-        // @ts-ignore
   const [isChapterSelected, setIsChapterSelected] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const chapterNumber = selectedChapter ?? 1; // Default to 1 if null
+
 
   const handleSearch = async (query: string) => {
     setIsLoading(true);
@@ -96,13 +98,28 @@ const English: React.FC = () => {
     const chap = parseInt(event.target.value, 10);
     setSelectedChapter(chap);
     setIsChapterSelected(true);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top when chapter changes
+  };
+
+  const handleNext = () => {
+    if (selectedChapter < bibleChapters[selectedBook]) {
+      setSelectedChapter(selectedChapter + 1);
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top when going to the next chapter
+    }
+  };
+
+  const handlePrevious = () => {
+    if (selectedChapter > 1) {
+      setSelectedChapter(selectedChapter - 1);
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top when going to the previous chapter
+    }
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white p-4">
+    <div style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556741533-f6acd647c1d4')" }} className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 flex flex-col items-center min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white p-4" >
       <div className="p-4 mt-12">
         {/* Search Bar */}
-        <SearchBar onSearch={handleSearch} />
+        {/* <SearchBar onSearch={handleSearch} /> */}
 
         {isLoading && <p className="text-blue-500">Loading...</p>}
         {error && <p className="text-red-500">{error}</p>}
@@ -126,7 +143,6 @@ const English: React.FC = () => {
       {/* Book and Chapter Selectors */}
       <div className="mb-4 w-full md:w-1/2">
         <div className="flex flex-row items-start">
-
           {/* Book Selector */}
           <select
             value={selectedBook}
@@ -134,6 +150,7 @@ const English: React.FC = () => {
               setSelectedBook(e.target.value);
               setSelectedChapter(1);
               setIsChapterSelected(false);
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top when book changes
             }}
             className="mr-8 w-full p-2 border rounded-md dark:bg-gray-800 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
@@ -156,7 +173,6 @@ const English: React.FC = () => {
               </option>
             ))}
           </select>
-
 
           {/* Audio Control */}
           <div>
@@ -196,6 +212,24 @@ const English: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Next/Previous Buttons placed at the bottom */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-gray-800 text-white flex justify-center space-x-4">
+        <button
+          onClick={handlePrevious}
+          disabled={selectedChapter <= 1}
+          className="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400"
+        >
+          Previous
+        </button>
+        <button
+          onClick={handleNext}
+          disabled={selectedChapter >= bibleChapters[selectedBook]}
+          className="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400"
+        >
+          Next
+        </button>
       </div>
     </div>
   );

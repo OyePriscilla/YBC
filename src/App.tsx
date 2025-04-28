@@ -8,6 +8,7 @@ import Bookmark from "./pages/Bookmark";
 import About from "./pages/About";
 import { NavBarItems } from "../types";
 import Footer from "./components/Footer";
+import YorubaBible from "./pages/YorubaBible";
 
 const NavBars: NavBarItems[] = [
   { path: "/", element: <Home /> },
@@ -16,6 +17,7 @@ const NavBars: NavBarItems[] = [
   { path: "/yoruba", element: <Yoruba /> },
   { path: "/about", element: <About /> },
   { path: "/bookmark", element: <Bookmark /> },
+  { path: "/yorubaBible", element: <YorubaBible /> },
 ];
 
 

@@ -1,6 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
+import {
+  Home,
+  CalendarDays,
+  Book,
+  BookOpen,
+  Globe,
+  Star,
+  Info,
+  HelpCircle
+} from "lucide-react";
+
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -99,24 +111,57 @@ const NavBar = () => {
             >
               Yearly Bible Calendar ▾
             </button>
-            {openDropdown === "calendar" && (
-              <div className="absolute top-full mt-2 bg-white text-gray-800 rounded shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 z-50">
-                <Link
-                  to="/Bible-Calendar"
-                  onClick={handleLinkClick}
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  English Plan
-                </Link>
-                <Link
-                  to="/yoruba"
-                  onClick={handleLinkClick}
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Yoruba Plan
-                </Link>
-              </div>
-            )}
+            {isOpen && (
+  <div className="fixed inset-0 bg-blue-900/95 backdrop-blur-md flex flex-col px-8 py-12 gap-6 md:hidden text-2xl font-semibold z-50 overflow-y-auto transition-all duration-300 ease-in-out shadow-lg rounded-b-lg">
+    {/* Close Button */}
+    <div className="flex justify-end mb-4">
+      <button
+        onClick={() => setIsOpen(false)}
+        className="text-white text-3xl hover:text-red-300 transition duration-200"
+        aria-label="Close menu"
+      >
+        ×
+      </button>
+    </div>
+
+    <Link to="/" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <Home size={28} /> Home
+    </Link>
+
+    <Link to="/Bible-Calendar" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <CalendarDays size={28} /> Yearly Calendar
+    </Link>
+
+    <Link to="/yoruba" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <BookOpen size={28} /> Bibeli Ajùmọ̀kà
+    </Link>
+
+    <Link to="/yorubaBible" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <Book size={28} /> Yoruba Bible
+    </Link>
+
+    <Link to="/englishkjv" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <Globe size={28} /> English Bible
+    </Link>
+
+    <a
+      href="https://oyepriscilla.github.io/QuizAppFrontend/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:text-yellow-300 flex items-center gap-4"
+    >
+      <HelpCircle size={28} /> Bible Quiz
+    </a>
+
+    <Link to="/bookmark" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <Star size={28} /> Bookmark
+    </Link>
+
+    <Link to="/about" onClick={handleLinkClick} className="text-white hover:text-yellow-300 flex items-center gap-4">
+      <Info size={28} /> About
+    </Link>
+  </div>
+)}
           </div>
 
           <a
@@ -138,47 +183,61 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Fullscreen Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-blue-900 flex flex-col px-8 py-18 gap-6 md:hidden text-2xl font-medium z-40 overflow-y-auto">
-          <Link to="/" onClick={handleLinkClick} className="text-white">
-            Home
-          </Link>
+  <div className="fixed inset-0 bg-blue-900/95 backdrop-blur-md flex flex-col px-8 py-12 gap-6 md:hidden text-2xl font-semibold z-50 overflow-y-auto transition-all duration-300 ease-in-out shadow-lg rounded-b-lg">
+    {/* Close Button */}
+    <div className="flex justify-center mb-4">
+    <h1 className="text-2xl mr-18 sm:text-4xl font-extrabold text-white drop-shadow-md mb-4 sm:mb-0">
+          BE Inspired 📖
+        </h1>
+      <button
+        onClick={() => setIsOpen(false)}
+        className="text-white text-3xl hover:text-red-300 transition duration-200"
+        aria-label="Close menu"
+      >
+        ×
+      </button>
+    </div>
 
-          <Link to="/Bible-Calendar" onClick={handleLinkClick} className="text-white">
-            Yearly Bible Calendar
-          </Link>
+    <Link to="/" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      Home
+    </Link>
 
-          <Link to="/yoruba" onClick={handleLinkClick} className="text-white">
-            Bibeli Ajùmọ̀kà Ojoojúmọ́
-          </Link>
+    <Link to="/Bible-Calendar" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      Yearly Bible Calendar
+    </Link>
 
-          <Link to="/yorubaBible" onClick={handleLinkClick} className="text-white">
-            Yoruba Bible
-          </Link>
+    <Link to="/yoruba" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      Bibeli Ajùmọ̀kà Ojoojúmọ́
+    </Link>
 
-          <Link to="/englishkjv" onClick={handleLinkClick} className="text-white">
-            English Bible
-          </Link>
+    <Link to="/yorubaBible" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      Yoruba Bible
+    </Link>
 
-          <a
-            href="https://oyepriscilla.github.io/QuizAppFrontend/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-          >
-            Bible Quiz
-          </a>
+    <Link to="/englishkjv" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      English Bible
+    </Link>
 
-          <Link to="/bookmark" onClick={handleLinkClick} className="text-white">
-            Bookmark
-          </Link>
+    <a
+      href="https://oyepriscilla.github.io/QuizAppFrontend/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:text-yellow-300 transition"
+    >
+      Bible Quiz
+    </a>
 
-          <Link to="/about" onClick={handleLinkClick} className="text-white">
-            About
-          </Link>
-        </div>
-      )}
+    <Link to="/bookmark" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      Bookmark
+    </Link>
+
+    <Link to="/about" onClick={handleLinkClick} className="text-white hover:text-yellow-300 transition">
+      About
+    </Link>
+  </div>
+)}
+
     </nav>
   );
 };

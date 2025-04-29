@@ -89,7 +89,7 @@ const Home = () => {
           </Link>
 
           <Link
-            to="/Bible-Calendar"
+            to="/yoruba"
             className="bg-green-600 hover:bg-green-700 text-white px-5 sm:px-8 py-3 sm:py-4 rounded-xl shadow-md transition-transform transform hover:scale-105 text-center text-sm sm:text-base font-semibold"
           >
             📖 Ka Bibeli Ajùmọ̀kà Ojoojúmọ́

@@ -184,11 +184,11 @@ const NavBar = () => {
       </div>
 
       {isOpen && (
-  <div className="fixed inset-0 bg-blue-900/95 backdrop-blur-md flex flex-col px-8 py-12 gap-6 md:hidden text-2xl font-semibold z-50 overflow-y-auto transition-all duration-300 ease-in-out shadow-lg rounded-b-lg">
+  <div className="fixed h-screen inset-0 bg-blue-900/95 backdrop-blur-md flex flex-col px-6 py-12 gap-6 md:hidden text-2xl font-semibold z-50 overflow-y-auto transition-all duration-300 ease-in-out shadow-lg rounded-b-lg">
     {/* Close Button */}
-    <div className="flex justify-center mb-4">
-    <h1 className="text-2xl mr-18 sm:text-4xl font-extrabold text-white drop-shadow-md mb-4 sm:mb-0">
-          BE Inspired 📖
+    <div className="flex justify-between items-center mb-4">
+    <h1 className="text-4xl sm:text-4xl font-extrabold text-white drop-shadow-md sm:mb-0">
+      📖
         </h1>
       <button
         onClick={() => setIsOpen(false)}

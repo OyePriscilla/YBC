@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Sun, Moon, ArrowRight, ArrowLeft, Bookmark } from 'lucide-react';
 
@@ -28,19 +29,21 @@ const YorubaBibleViewer: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [bookmarkedVerses, setBookmarkedVerses] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResult, setSearchResult] = useState<string>("");
+  const [recentSearches, setRecentSearches] = useState<string[]>(() => {
+    const stored = localStorage.getItem('recentSearches');
+    return stored ? JSON.parse(stored) : [];
+  });
 
+  const navigate = useNavigate();
 
-  const handleSearch = async () => {
-    const res = await fetch(
-      `https://yorubabibleapi.onrender.com/search?query=${encodeURIComponent(
-        searchQuery
-      )}`
-    );
-    const data = await res.text();
-    setSearchResult(data);
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      const updatedSearches = [searchQuery, ...recentSearches.filter(q => q !== searchQuery)].slice(0, 30);
+      setRecentSearches(updatedSearches);
+      localStorage.setItem('recentSearches', JSON.stringify(updatedSearches));
+      navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+    }
   };
-
 
   useEffect(() => {
     const fetchBible = async () => {
@@ -53,7 +56,6 @@ const YorubaBibleViewer: React.FC = () => {
     };
     fetchBible();
   }, []);
-
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -76,7 +78,6 @@ const YorubaBibleViewer: React.FC = () => {
       setCurrentChapter(chapters[index + 1]);
     } else {
       const allBooks = Object.keys(bibleData[currentTestament]);
-
       const bookIndex = allBooks.indexOf(currentBook);
       if (bookIndex < allBooks.length - 1) {
         const nextBook = allBooks[bookIndex + 1];
@@ -176,6 +177,7 @@ const YorubaBibleViewer: React.FC = () => {
             <option key={chapter} value={chapter}>Chapter {chapter}</option>
           ))}
         </select>
+
         <input
           type="text"
           placeholder="🔍 Search Yoruba Bible... e.g Jesu"
@@ -191,18 +193,27 @@ const YorubaBibleViewer: React.FC = () => {
           Search
         </button>
       </div>
-      {Array.isArray(searchResult) && searchResult.length > 0 && (
-        <div className="mt-4 bg-white dark:bg-gray-800 p-4 rounded shadow">
-          <h3 className="font-bold mb-2">🔍 Search Result:</h3>
-          <pre className="whitespace-pre-wrap text-sm">
-            {searchResult.map((item, index) => (
-              <div key={index}>
-                {`${item.book} ${item.chapter}:${item.verse} ${item.text}`}
-              </div>
+
+      {recentSearches.length > 0 && (
+        <div className="mb-6">
+          <h2 className="font-semibold text-sm mb-2">Recent Searches:</h2>
+          <div className="flex flex-wrap gap-2">
+            {recentSearches.map((term, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  setSearchQuery(term);
+                  navigate(`/search?query=${encodeURIComponent(term)}`);
+                }}
+                className="px-3 py-1 bg-gray-200 dark:bg-gray-600 rounded-full text-sm hover:bg-gray-300 dark:hover:bg-gray-500"
+              >
+                {term}
+              </button>
             ))}
-          </pre>
+          </div>
         </div>
       )}
+
       <div className="flex justify-between mb-4">
         <button
           onClick={previousChapter}
@@ -225,7 +236,7 @@ const YorubaBibleViewer: React.FC = () => {
           return (
             <div
               key={verse}
-              className="p-4 rounded-xl shadow-lg border  dark:bg-gray-800 transition-all duration-300 hover:scale-[1.01]"
+              className="p-4 rounded-xl shadow-lg border dark:bg-gray-800 transition-all duration-300 hover:scale-[1.01]"
             >
               <div className="flex justify-between">
                 <span className="font-semibold">{verse}</span>
@@ -236,7 +247,7 @@ const YorubaBibleViewer: React.FC = () => {
                   />
                 </button>
               </div>
-              <p className=" text-justify mt-2 leading-relaxed font-serif text-lg">{text}</p>
+              <p className="text-justify mt-2 leading-relaxed font-serif text-lg">{text}</p>
             </div>
           );
         })}

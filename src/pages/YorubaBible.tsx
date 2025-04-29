@@ -38,7 +38,7 @@ const YorubaBibleViewer: React.FC = () => {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
-      const updatedSearches = [searchQuery, ...recentSearches.filter(q => q !== searchQuery)].slice(0, 30);
+      const updatedSearches = [searchQuery, ...recentSearches.filter(q => q !== searchQuery)].slice(0, 10);
       setRecentSearches(updatedSearches);
       localStorage.setItem('recentSearches', JSON.stringify(updatedSearches));
       navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
